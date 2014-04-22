@@ -12,6 +12,14 @@ Diretório: code/Motobike
 A documentação em UML foi feita com arquivos script individuais contendo código declarativo de diagramas. Estes podem ser encontrados no diretório: uml.
 
 ### Casos de Uso
+
+#### Gestão de Usuários
+![customer_management.yuc](uml/use_cases/images/customer_management.png)
+
+#### Gestão de Vehículos
+![vehicle_management.yuc](uml/use_cases/images/vehicle_management.png)
+
+
 Os scripts com os Use Cases podem ser encontrados em uml/use_cases, também em linguagem nativa do yuml.me.
 
 ### Diagramas de Classe
