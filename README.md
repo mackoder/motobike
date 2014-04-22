@@ -7,7 +7,7 @@ Para criar e compilar foi utilizado NetBeans IDE 7.4 para Windows, com Java 1.7.
 Diretório: code/Motobike
 
 
-##Documentação e diagrmas
+##Documentação e diagramas
 
 ### Diagramas de Classe
 
