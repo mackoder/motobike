@@ -1,0 +1,16 @@
+Temos sérias limitações no design atual:
+
+	* Apenas pode-se alugar um vehículo por cliente.
+	  Isto é inconveniente quando uma familia decide alugar N vehículos, por exemplo.
+	  
+	* Preço de alugueis fixo.
+	  Uma mudança na arquitetura permitiria mais flexibilidade para os preços, como promoções e pacotes.
+	
+	* Disponibilidade controlada na classe Vehicle, que não parece uma abordagem limpa. Afinal, não é
+	  responsabilidade dela saber disso.
+	  
+	* Casos com clientes com o mesmo endereço para trabalho e residência não são otimizados... talvez poderiam ser.
+	
+	* Atendente não tem condições de alugar vehículos. Se quiser, terá de ter cadastro duplo como cliente.
+	  Isto poderia ser melhor, pois atendentes podem querer curtir o serviço, junto com benefícios oferecidos
+	  pela empresa para estes.
