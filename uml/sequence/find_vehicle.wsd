@@ -1,0 +1,13 @@
+title Find Vehicle
+
+alt Find Bicycle
+  UI->+VehicleDAOFacade: findBicycleByXXX()
+  VehicleDAOFacade->+BicycleDAO: findByXXX()
+  BicycleDAO->-VehicleDAOFacade:
+  VehicleDAOFacade->-UI:
+else Find Motorcycle
+  UI->+VehicleDAOFacade: findMotorcycleByXXX()
+  VehicleDAOFacade->+MotorcycleDAO: findByXXX()
+  MotorcycleDAO->-VehicleDAOFacade:
+  VehicleDAOFacade->-UI:
+end

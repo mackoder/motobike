@@ -1,0 +1,21 @@
+title Add Vehicle
+
+alt Add Bicycle
+
+UI->+VehicleDAOFacade: addBicycle()
+VehicleDAOFacade->+BicycleDAO: add()
+BicycleDAO->+Bicycle: new
+Bicycle->-BicycleDAO: 
+BicycleDAO->-VehicleDAOFacade:
+VehicleDAOFacade->-UI:
+
+else Add Motorcycle
+
+UI->+VehicleDAOFacade: addMotorcycle()
+VehicleDAOFacade->+MotorcycleDAO: add()
+MotorcycleDAO->+Motorcycle: new
+Motorcycle->-MotorcycleDAO: 
+MotorcycleDAO->-VehicleDAOFacade:
+VehicleDAOFacade->-UI:
+
+end

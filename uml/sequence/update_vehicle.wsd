@@ -1,0 +1,13 @@
+title Update Vehicle
+
+alt Update Bicycle
+  UI->+VehicleDAOFacade: update(Vehicle)
+  VehicleDAOFacade->+BicycleDAO: update(Vehicle)
+  BicycleDAO->-VehicleDAOFacade:
+  VehicleDAOFacade->-UI:
+else Update Motorcycle
+  UI->+VehicleDAOFacade: update(Vehicle)
+  VehicleDAOFacade->+MotorcycleDAO: update(Vehicle)
+  MotorcycleDAO->-VehicleDAOFacade:
+  VehicleDAOFacade->-UI:
+end
