@@ -7,9 +7,11 @@ Para criar e compilar foi utilizado NetBeans IDE 7.4 para Windows, com Java 1.7.
 Diretório: code/Motobike
 
 
-##Documentação e diagrmas
+##Documentação e diagramas
 
-A documentação em UML foi feita com arquivos script individuais contendo código declarativo de diagramas. Estes podem ser encontrados no diretório: uml.
+### Diagramas de Classe
+
+![general_view](uml/class/images/general_view.png)
 
 ### Casos de Uso
 
@@ -18,10 +20,6 @@ A documentação em UML foi feita com arquivos script individuais contendo códi
 
 #### Gestão de Vehículos
 ![vehicle_management](uml/use_cases/images/vehicle_management.png)
-
-### Diagramas de Classe
-
-![general_view](uml/classes/images/general_view.png)
 
 ### Diagramas de Sequência
 
@@ -35,6 +33,8 @@ A documentação em UML foi feita com arquivos script individuais contendo códi
 ![delete_vehicle](uml/sequence/images/add_vehicle.png)
 
 #### Scripts Geradores
+
+A documentação UML foi feita com arquivos script individuais contendo código declarativo de diagramas. Estes podem ser encontrados a partir do diretório uml.
 
 Diagramas de classe podem ser encontrados em uml/class, e os scripts com os Use Cases em uml/use_cases, em linguagem do yuml.me. Eles são interpretados por um utilitário que interfaceia com o site yuml.me, que é nosso engine gerador.
 
