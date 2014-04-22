@@ -1,0 +1,7 @@
+//
+// Use Cases for Customer Management 1.1 to 1.4.
+//
+[Employee]-(Add Customer)
+[Employee]-(Find Customer)
+[Employee]-(Update Customer)
+[Employee]-(Delete Customer)

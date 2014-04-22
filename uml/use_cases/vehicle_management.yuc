@@ -1,0 +1,7 @@
+//
+// Use Cases for Vehicle Management 1.1 to 1.4.
+//
+[Employee]-(Add Vehicle)
+[Employee]-(Find Vehicle)
+[Employee]-(Update Vehicle)
+[Employee]-(Delete Vehicle)
