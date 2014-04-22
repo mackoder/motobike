@@ -14,19 +14,14 @@ A documentação em UML foi feita com arquivos script individuais contendo códi
 ### Casos de Uso
 
 #### Gestão de Usuários
-![customer_management.yuc](uml/use_cases/images/customer_management.png)
+![customer_management](uml/use_cases/images/customer_management.png)
 
 #### Gestão de Vehículos
-![vehicle_management.yuc](uml/use_cases/images/vehicle_management.png)
-
-
-Os scripts com os Use Cases podem ser encontrados em uml/use_cases, também em linguagem nativa do yuml.me.
+![vehicle_management](uml/use_cases/images/vehicle_management.png)
 
 ### Diagramas de Classe
 
-Diagramas de classe podem ser encontrados em uml/class.
-
-Eles são interpretados por um utilitário que interfaceia com o site yuml.me, que é nosso engine gerador.
+![general_view](uml/classes/images/general_view.png)
 
 ### Diagramas de Sequência
 
@@ -39,4 +34,10 @@ Eles são interpretados por um utilitário que interfaceia com o site yuml.me, q
 #### Excluir Vehículo
 ![delete_vehicle](uml/sequence/images/add_vehicle.png)
 
-Os Diagramas de Sequência podem ser encontrados em uml/sequence.Estes foram gerados usando www.websequencediagrams.com. Uma cópia da imagem gerada de cada script pode ser encontrada em uml/sequence/images, que são as imagens mostradas neste documento README.md.
+#### Scripts Geradores
+
+Diagramas de classe podem ser encontrados em uml/class, e os scripts com os Use Cases em uml/use_cases, em linguagem do yuml.me. Eles são interpretados por um utilitário que interfaceia com o site yuml.me, que é nosso engine gerador.
+
+Os Diagramas de Sequência podem ser encontrados em uml/sequence. Estes foram gerados usando www.websequencediagrams.com. 
+
+Uma cópia da imagem gerada de cada script pode ser encontrada em uml/_____/images, que são as imagens mostradas neste documento README.md.
