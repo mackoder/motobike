@@ -7,16 +7,15 @@ import motobike.model.Motorcycle;
 public class MotorcycleDAO {
 	private List<Motorcycle> entities = new ArrayList<Motorcycle>();
 	
-	public void create(final Motorcycle entity) {
+	public void add(final Motorcycle entity) {
 		entities.add(entity);
 	}
 	
-	public void read() {
-		
-	}
-	
-	public void update() {
-	
+	public void update(final Motorcycle entity) {
+		int item = entities.indexOf(entity);
+		if (item != -1) {
+			entities.set(item, entity);
+		}
 	}
 	
 	public void delete(final Motorcycle entity) {
