@@ -1,13 +1,11 @@
 package motobike.dao;
 
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-import motobike.model.Bicycle;
 import motobike.model.Vehicle;
 
 public class VehicleDAO<T extends Vehicle> {
-	private List<T> entities = new ArrayList<T>();
+	private final List<T> entities = new ArrayList<T>();
 
 	public void add(final T entity) {
 		entities.add(entity);
@@ -33,6 +31,10 @@ public class VehicleDAO<T extends Vehicle> {
 
 	public void delete(final T entity) {
 		entities.remove(entity);
+	}
+	
+	public int size() {
+		return entities.size();
 	}
 
 	public List<T> findByMake(final String make) {

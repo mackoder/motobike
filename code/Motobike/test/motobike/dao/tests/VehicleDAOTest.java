@@ -1,13 +1,7 @@
 package motobike.dao.tests;
 
-import motobike.dao.BicycleDAO;
 import motobike.dao.VehicleDAO;
-import motobike.model.Bicycle;
 import motobike.model.Vehicle;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

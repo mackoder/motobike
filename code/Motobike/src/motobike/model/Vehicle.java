@@ -2,7 +2,6 @@ package motobike.model;
 
 import java.awt.Color;
 import java.util.Date;
-import motobike.model.detail.VehicleType;
 
 public class Vehicle {
 	private int ID;
@@ -11,8 +10,8 @@ public class Vehicle {
 	private String model;
 	private Date manufacturingDate;
 	private double hourlyPrice;
-	private boolean active;
-	private boolean available;
+	private boolean active = true;
+	private boolean available = true;
 
 	public int getID() {
 		return ID;

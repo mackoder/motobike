@@ -1,8 +1,11 @@
 package motobike.dao;
 
-import java.util.ArrayList;
-import java.util.List;
 import motobike.model.Bicycle;
 
 public class BicycleDAO extends VehicleDAO<Bicycle> {
+	// Horrivel, mas sem definicao de projeto ainda...
+	static private final BicycleDAO singletonInstance = new BicycleDAO();
+	static public BicycleDAO get() {
+		return singletonInstance;
+	}
 }
