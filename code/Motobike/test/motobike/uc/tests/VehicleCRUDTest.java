@@ -1,14 +1,16 @@
-package motobike.dao.tests;
+package motobike.uc.tests;
 
-import motobike.dao.VehicleDAO;
+import motobike.dao.GenericDAO;
 import motobike.model.Vehicle;
+import motobike.model.tests.TestingDataset;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
-public class VehicleDAOTest {
+public class VehicleCRUDTest {
 	@Test
 	public void addAndReadTest() {
-		VehicleDAO<Vehicle> dao = new VehicleDAO<Vehicle>();
+		GenericDAO<Vehicle> dao = new GenericDAO<Vehicle>();
 
 		Vehicle e0 = new Vehicle();
 		e0.setID(1);
@@ -23,7 +25,7 @@ public class VehicleDAOTest {
 	
 	@Test
 	public void updateTest() {
-		VehicleDAO<Vehicle> dao = new VehicleDAO<Vehicle>();
+		GenericDAO<Vehicle> dao = new GenericDAO<Vehicle>();
 
 		Vehicle e0 = new Vehicle();
 		e0.setID(1);
@@ -46,7 +48,7 @@ public class VehicleDAOTest {
 
 	@Test(expected=IndexOutOfBoundsException.class)
 	public void deleteTest() {
-		VehicleDAO<Vehicle> dao = new VehicleDAO<Vehicle>();
+		GenericDAO<Vehicle> dao = new GenericDAO<Vehicle>();
 
 		Vehicle e0 = new Vehicle();
 		e0.setID(1);

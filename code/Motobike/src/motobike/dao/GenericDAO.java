@@ -2,10 +2,10 @@ package motobike.dao;
 
 import java.util.ArrayList;
 import java.util.List;
-import motobike.model.Vehicle;
+import motobike.model.Entity;
 
-public class VehicleDAO<T extends Vehicle> {
-	private final List<T> entities = new ArrayList<T>();
+public class GenericDAO<T extends Entity> {
+	private final List<T> entities = new ArrayList<>();
 
 	public void add(final T entity) {
 		entities.add(entity);

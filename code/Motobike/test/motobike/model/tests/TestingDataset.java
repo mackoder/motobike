@@ -1,11 +1,11 @@
 package motobike.model.tests;
 
-import motobike.dao.VehicleDAO;
+import motobike.dao.GenericDAO;
 import motobike.model.Bicycle;
 import motobike.model.Motorcycle;
 
 public class TestingDataset {
-	static public void addBicycles(final VehicleDAO dao) {
+	static public void addBicycles(final GenericDAO dao) {
 		final Bicycle e1 = new Bicycle();
 		e1.setID(1); e1.setMake("Caloi"); e1.setModel("1000"); dao.add(e1);
 
@@ -16,7 +16,7 @@ public class TestingDataset {
 		e3.setID(3); e3.setMake("Caloi"); e3.setModel("3000"); dao.add(e3);
 	}
 
-	static public void addMotorcycles(final VehicleDAO dao) {
+	static public void addMotorcycles(final GenericDAO dao) {
 		final Motorcycle e1 = new Motorcycle();
 		e1.setID(1001); e1.setMake("Honda"); e1.setModel("Bis"); dao.add(e1);
 

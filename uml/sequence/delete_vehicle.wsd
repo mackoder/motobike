@@ -1,13 +1,8 @@
 title Delete Vehicle
 
-alt Delete Bicycle
-  UI->+VehicleDAOFacade: delete(Vehicle)
-  VehicleDAOFacade->+BicycleDAO: delete(Vehicle)
-  BicycleDAO->-VehicleDAOFacade:
-  VehicleDAOFacade->-UI:
-else Delete Motorcycle
-  UI->+VehicleDAOFacade: delete(Vehicle)
-  VehicleDAOFacade->+MotorcycleDAO: delete(Vehicle)
-  MotorcycleDAO->-VehicleDAOFacade:
-  VehicleDAOFacade->-UI:
+Actor->PersonDAO: delete(e)
+PersonDAO->PersonDAO: getInstance()
+PersonDAO->PersonDAO: delete(e.ID)
+
 end
+

@@ -3,8 +3,7 @@ package motobike.model;
 import java.awt.Color;
 import java.util.Date;
 
-public class Vehicle {
-	private int ID;
+public class Vehicle extends Entity {
 	private Color color;
 	private String make;
 	private String model;
@@ -12,14 +11,6 @@ public class Vehicle {
 	private double hourlyPrice;
 	private boolean active = true;
 	private boolean available = true;
-
-	public int getID() {
-		return ID;
-	}
-
-	public void setID(int ID) {
-		this.ID = ID;
-	}
 
 	public Color getColor() {
 		return color;
@@ -53,7 +44,7 @@ public class Vehicle {
 		this.manufacturingDate = manufacturingDate;
 	}
 
-	public double getHourlyPrice() {
+	public double getTimeUnitPrice() {
 		return hourlyPrice;
 	}
 
